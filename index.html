@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROUWAYD</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #08080b;
+    }
+
+    h1 {
+      color: #ff3ca6;
+      font-family: Arial, sans-serif;
+      font-size: clamp(3rem, 12vw, 10rem);
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-align: center;
+      text-shadow: 0 0 15px #ff3ca6,
+                   0 0 45px #ff1493;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ff3ca6,
+                     0 0 25px #ff1493;
+      }
+      to {
+        text-shadow: 0 0 25px #ff3ca6,
+                     0 0 65px #ff1493,
+                     0 0 100px #a000ff;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      h1 { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <h1>ROUWAYD</h1>
+</body>
+</html>
+
